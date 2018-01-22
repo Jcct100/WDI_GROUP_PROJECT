@@ -17,7 +17,7 @@ function eventsShowController(
   currentUserService
 ) {
   const vm = this;
-
+  console.log(currentUserService.currentUser);
   vm.currentUser = currentUserService.currentUser.id;
   vm.events = Event.query();
   console.log(vm);
